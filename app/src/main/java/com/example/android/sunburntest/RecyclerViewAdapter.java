@@ -39,7 +39,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             if (webSites.get(position).getAllowedCountries().contains(userCountryCode))
                 holder.cardWebView.loadUrl(webSites.get(position).getWebAddress());
             else
-                holder.cardWebView.setVisibility(View.INVISIBLE);
                 holder.cardWebView.loadDataWithBaseURL("file:///android_asset/", "<img src='ops.jpg' />", "text/html", "utf-8", null);
 
         } else {

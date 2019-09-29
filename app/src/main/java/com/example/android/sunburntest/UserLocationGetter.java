@@ -24,7 +24,6 @@ public class UserLocationGetter {
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
                         123);
             }
-            return null;
         }
         Geocoder gcd = new Geocoder(activity);
         LocationManager locationManager = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
